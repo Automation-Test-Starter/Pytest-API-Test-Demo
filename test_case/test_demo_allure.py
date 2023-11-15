@@ -6,7 +6,7 @@ class TestPytestDemo:
 =======
 @allure.title("Test example get endpoint")
 @allure.description("Test the example get API endpoint")
-def test_get_example_endpoint_allure(env_config, env_request_data, env_response_data):
+def test_get_example_endpoint(env_config, env_request_data, env_response_data):
     host = env_config["host"]
     get_api = env_config["getAPI"]
     get_api_request_data = env_request_data["getAPI"]
@@ -46,7 +46,7 @@ def test_get_example_endpoint_allure(env_config, env_request_data, env_response_
 =======
 @allure.title("Test example POST endpoint")
 @allure.description("Test the example POST API endpoint")
-def test_post_example_endpoint_allure(env_config, env_request_data, env_response_data):
+def test_post_example_endpoint(env_config, env_request_data, env_response_data):
     host = env_config["host"]
     post_api = env_config["postAPI"]
     post_api_request_data = env_request_data["postAPI"]
