@@ -161,4 +161,3 @@ cython_debug/
 
 allure-report/
 .idea/
-report
