@@ -1,0 +1,5 @@
+{
+  "host": "https://jsonplaceholder.typicode.com",
+  "getAPI": "/posts/1",
+  "postAPI":"/posts"
+}
