@@ -17,4 +17,3 @@ pytest-metadata==3.0.0
 requests==2.31.0
 urllib3==2.0.7
 pytest-custom-exit-code==0.3.0
-
