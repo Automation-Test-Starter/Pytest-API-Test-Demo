@@ -18,9 +18,11 @@ class TestPytestMultiEnvDemo:
         host = env_config["host"]
         post_api = env_config["postAPI"]
         post_api_request_data = env_request_data["postAPI"]
+        print("make the request")
         post_api_response_data = env_response_data["postAPI"]
-        # send request
-        response = requests.post(host + post_api, post_api_request_data)
-        # assert
+        # Your test code here
+        response = requests.post(host + post_api, json=post_api_request_data)
+        print("verify the response status code")
         assert response.status_code == 201
+        print("verify the response data")
         assert response.json() == post_api_response_data
