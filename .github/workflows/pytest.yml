@@ -32,14 +32,14 @@ jobs:
       run: |
         ENV=dev pytest
 
-    - name: Archive Pytest test report
+    - name: Archive Pytest allure test report
       uses: actions/upload-artifact@v3
       with:
-        name: Pytest-test-report
-        path: report
+        name: Pytest-allure-report
+        path: allure-results
           
-    - name: Upload Pytest report to GitHub
+    - name: Upload Pytest allure report to GitHub
       uses: actions/upload-artifact@v3
       with:
-        name: Pytest-test-report
-        path: report
+        name: Pytest-allure-report
+        path: allure-results
