@@ -14,9 +14,9 @@ with open('data/response_data.json', 'r') as json_file:
     response_data = json.load(json_file)
 
 
-class TestPytestDemo:
+class TestPytestDataDrivingDemo:
 
-    def test_get_demo(self):
+    def test_get_demo_data_driving(self):
         host = config.get("host")
         get_api = config.get("getAPI")
         get_api_response_data = response_data.get("getAPI")
@@ -26,7 +26,7 @@ class TestPytestDemo:
         assert response.status_code == 200
         assert response.json() == get_api_response_data
 
-    def test_post_demo(self):
+    def test_post_demo_data_driving(self):
         host = config.get("host")
         post_api = config.get("postAPI")
         post_api_request_data = request_data.get("postAPI")
